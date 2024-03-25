@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- A magical incantation to invoke the enchantments of HTML -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>𝓓𝓮𝓪𝓽𝓱 𝓑𝔂𝓽𝓮</title> <!-- The spellbook's cover page -->
+  <!-- Styles to cast a spell of beauty upon the page -->
+  <style>
+    /* Styles to make the page look charming */
+    body {
+      font-family: 'Comic Sans MS', cursive, sans-serif; /* A magical font for whimsical charm */
+      margin: 0; /* No margin, for a clean enchantment */
+      padding: 0; /* No padding, for a smooth charm */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh; /* Enchant the page to fill the entire screen */
+      color: #ff0000; /* Red text color, for a touch of passion */
+      background-color: #000000; /* Black background, like the night sky */
+      background-image: url('https://media.discordapp.net/attachments/801145282350809108/1221932652911657042/img-mQ4THLhZsNMMdwBbwDut9.png?ex=66146076&is=6601eb76&hm=51efad7c44f3aa9814eea8b532c67291c3d2bd60c7dd18fc1402d010be0f22c5&=&format=webp&quality=lossless&width=1160&height=662'); /* A mystical image to set the scene */
+      background-size: cover; /* Enchant the background to cover the entire page */
+      background-position: center; /* Align the background to the center */
+    }
+
+    /* Styles for the top bar, a magical gateway to other realms */
+    .topbar {
+      width: 100%; /* Enchant the top bar to span the entire width of the page */
+      background-color: rgba(0, 0, 0, 0.759); /* A translucent black background to cast a shadow */
+      padding: 10px; /* Add padding for a cozy feel */
+      border-radius: 0 0 10px 10px; /* Round the corners for a gentle touch */
+      display: flex;
+      justify-content: space-between; /* Spread the elements apart for balance */
+      align-items: center; /* Align items vertically for harmony */
+      position: fixed; /* Fix the top bar in place */
+      top: 0; /* Attach it firmly to the top */
+      z-index: 999; /* Give it a high magical rank to ensure visibility */
+    }
+
+    /* Styles for the logo container, a magical vessel of identity */
+    .logo-container {
+      display: flex; /* Arrange items in a row for alignment */
+      align-items: center; /* Center items vertically for balance */
+    }
+
+    /* Styles for the logo image, a magical symbol of identity */
+    .logo-container img {
+      margin-right: 10px; /* Add some space between the logo and text */
+    }
+
+    /* Styles for the blurred text, a magical veil of secrecy */
+    .blurred-text {
+      filter: blur(3px); /* Blur the text to obscure its meaning */
+      user-select: none; /* Forbid selection of text for privacy */
+      pointer-events: none; /* Disable pointer events for invisibility */
+    }
+
+    /* More enchanting styles for the sidebar, a magical menu of options */
+    .sidebar {
+      width: 200px; /* Set the width of the sidebar to a magical dimension */
+      height: calc(100vh - 60px); /* Enchant the sidebar to fill the remaining height */
+      background-color: rgba(0, 0, 0, 0.759); /* A translucent black background for mystery */
+      position: fixed; /* Fix the sidebar in place */
+      left: 0; /* Attach it firmly to the left */
+      top: 100px; /* Position it below the top bar for hierarchy */
+      border-radius: 0 10px 10px 0; /* Round the corners for elegance */
+      z-index: 998; /* Give it a high magical rank to ensure visibility */
+    }
+
+    /* Styles for the main container, a magical vessel of content */
+    .container {
+      text-align: center; /* Center the content for focus */
+      background-color: rgba(0, 0, 0, 0.759); /* A translucent black background for contrast */
+      padding: 20px; /* Add padding for comfort */
+      border-radius: 10px; /* Round the corners for a gentle touch */
+      margin-top: 60px; /* Add margin to create space below the top bar */
+    }
+
+    /* Enchant the input field with magical properties */
+    input[type="text"] {
+      padding: 8px; /* Add padding for comfort */
+      font-size: 16px; /* Set the font size for readability */
+      margin-bottom: 10px; /* Add margin for separation */
+      color: #ff0000; /* Pink text color for charm */
+      background-color: #000000; /* Black background for contrast */
+      border: 2px solid #ff0000; /* Pink border for style */
+      border-radius: 5px; /* Round the corners for elegance */
+    }
+
+    /* Enchant the button with magical properties */
+    button {
+      padding: 8px 16px; /* Add padding for comfort */
+      font-size: 16px; /* Set the font size for readability */
+      background-color: #9e3b3b; /* Pink button color for charm */
+      color: #000000; /* Black text color for contrast */
+      border: none; /* Remove the border for a sleek appearance */
+      border-radius: 5px; /* Round the corners for elegance */
+      cursor: pointer; /* Change the cursor to a pointer for interactivity */
+      transition: background-color 0.3s ease; /* Add a smooth transition for elegance */
+    }
+
+    /* Enchant the button on hover with magical effects */
+    button:hover {
+      background-color: #9e5151; /* Red hover color for excitement */
+    }
+
+    /* Styles for user info, a magical scroll of knowledge */
+    #user-info {
+      margin-top: 20px; /* Add margin for separation */
+      color: #d15454; /* Pink text color for charm */
+    }
+
+    /* Styles for the IP logger message, a magical record of visitors */
+    .ip-logger-message {
+      background-color: rgba(255, 0, 0, 0.1); /* A translucent red background for caution */
+      padding: 10px; /* Add padding for comfort */
+      border-radius: 5px; /* Round the corners for elegance */
+      margin-top: 20px; /* Add margin for separation */
+      text-align: left; /* Align the text to the left for clarity */
+      color: #ff0000; /* Red text color for emphasis */
+    }
+
+    /* New styles for the pages, a magical realm of endless possibilities */
+
+    /* Hide all pages by default */
+    .page {
+      display: none; /* Conceal the pages from sight */
+    }
+
+    /* Show only the active page */
+    .active-page {
+      display: block; /* Reveal the active page to the world */
+    }
+
+    /* New styles for the buttons in the sidebar, enchanted keys to unlock hidden wonders */
+    .sidebar button {
+      display: block; /* Display the buttons as blocks for clarity */
+      width: 80%; /* Set the width to a magical dimension for balance */
+      margin: 10px auto; /* Add margin for separation and center the buttons */
+    }
+
+    /* Styles for the toggle container, a magical chamber of transformation */
+    .toggle-container {
+      display: flex; /* Arrange items in a row for alignment */
+      align-items: center; /* Center items vertically for balance */
+      margin-bottom: 10px; /* Add margin for separation */
+      color: #ff0000; /* Red text color for charm */
+    }
+
+    /* Styles for the toggle switch, a magical lever of change */
+    .toggle-switch {
+      position: relative; /* Establish a magical realm of relative positioning */
+      display: inline-block; /* Allow the switch to flow naturally */
+      width: 60px; /* Set the width to a magical dimension */
+      height: 34px; /* Set the height to a magical dimension */
+      background-color: #9e3b3b; /* Pink background for charm */
+      border-radius: 17px; /* Round the corners for elegance */
+    }
+
+    /* Styles for the toggle switch input, a magical conduit of energy */
+    .toggle-switch input {
+      opacity: 0; /* Make the input invisible to the naked eye */
+      width: 0; /* Shrink the input to zero width */
+      height: 0; /* Shrink the input to zero height */
+    }
+
+    /* Styles for the toggle slider, a magical bridge between worlds */
+    .toggle-slider {
+      position: absolute; /* Establish a realm of absolute positioning */
+      cursor: pointer; /* Change the cursor to a pointer for interactivity */
+      top: 0; /* Position the slider at the top */
+      left: 0; /* Position the slider at the left */
+      right: 0; /* Position the slider at the right */
+      bottom: 0; /* Position the slider at the bottom */
+      background-color: #000000; /* Black background for contrast */
+      transition: .4s; /* Add a smooth transition for elegance */
+      border-radius: 17px; /* Round the corners for elegance */
+    }
+
+    /* Styles for the toggle slider before, a magical adornment for the slider */
+    .toggle-slider:before {
+      position: absolute; /* Establish a realm of absolute positioning */
+      content: ""; /* No content for mystery */
+      height: 26px; /* Set the height to a magical dimension */
+      width: 26px; /* Set the width to a magical dimension */
+      left: 4px; /* Position the adornment to the left */
+      bottom: 4px; /* Position the adornment to the bottom */
+      background-color: #ff0000; /* Pink adornment for charm */
+      transition: .4s; /* Add a smooth transition for elegance */
+      border-radius: 50%; /* Round the corners for elegance */
+    }
+
+    /* Styles for the toggle switch when checked, a magical transformation */
+    input:checked + .toggle-slider {
+      background-color: #1a0000; /* Dark red background for emphasis */
+    }
+
+    /* Styles for the toggle slider before when checked, a magical journey */
+    input:checked + .toggle-slider:before {
+      transform: translateX(26px); /* Move the adornment to the right */
+    }
+/* Styles for the Play Music button */
+.play-music-btn {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.play-music-btn {
+  /* Additional styles for the Play Music button */
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+  </style>
+</head>
+
+<body>
+    <div class="topbar">
+        <!-- A magical emblem of identity -->
+        <div class="logo-container">
+            <img src="https://cdn.discordapp.com/attachments/801145282350809108/1221502251777134633/DeathByte_Icon.jpg?ex=6612cf9f&is=66005a9f&hm=a95dbd56812ba15a445229c5b533b1e19600333c8c6f595aa35c38f5bca252e5&" alt="Logo" style="width: 70px; height: 70px; border-radius: 50%; margin-left: 30px;">
+            <span>Made with ❤️ by WormGPT & DeathByte</span> <!-- A heartwarming message -->
+        </div>
+        <h2>𝓛𝓸𝓸𝓴 𝓤𝓟 𝓤𝓼𝓮𝓻</h2> <!-- A magical incantation to set the tone -->
+        <div></div>
+    </div>
+
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <!-- Buttons for extra features -->
+    <button onclick="showPage('tokenPage')">Generate Token</button> <!-- A button to conjure tokens T-T -->
+    <button onclick="showPage('ipLoggerPage')">IP Logger Generator</button> <!-- A button to summon the IP Logger O-o -->
+    <button onclick="toggleMusic()" class="play-music-btn">Play Music</button> <!-- A button to play the Music ^-^ -->
+  </div>
+
+  <!-- Token Page -->
+  <div id="tokenPage" class="container page active-page">
+    <h3>Token Generator</h3> <!-- A magical tool to create tokens -->
+    <input type="number" id="username" placeholder="Enter User ID :3" oninput="checkUserId()" style="color: #ff0000; background-color: #000000; height: 30px; width: 160px; border: 2px solid #ff0000; border-radius: 5px;">
+    <!-- An enchanted input field -->
+    <button onclick="generateToken()">Generate Token</button> <!-- A button to activate the token generation spell -->
+    <div id="user-info"></div> <!-- A mystical scroll to reveal the generated token -->
+  </div>
+
+  <!-- IP Logger Page -->
+  <div id="ipLoggerPage" class="container page">
+    <h3>IP Logger Generator</h3> <!-- A spellbook to summon the IP Logger -->
+    <label for="webhookURL">Discord Webhook URL:</label> <!-- A magical incantation to bind the logger to Discord -->
+    <input type="text" id="webhookURL" placeholder="Enter Webhook URL"> <!-- A magical conduit to input the URL -->
+    <div class="toggle-container">
+      <label for="obfuscateToggle">Obfuscate? (Don't work yet)</label> <!-- An option to cloak the spell -->
+      <label class="toggle-switch">
+        <input type="checkbox" id="obfuscateToggle">
+        <span class="toggle-slider">UwU</span> <!-- A secret symbol of magic -->
+      </label>
+    </div>
+    <button onclick="generateIPLogger()">Generate IP Logger</button> <!-- A button to cast the IP Logger spell -->
+    <div id="ip-info"></div> <!-- A mystical scroll to reveal the IP Logger's secrets -->
+  </div>
+
+  <script src="WormGPT.js"></script> <!-- Meow, Load the magic from WormGPT.js UwU -->
+  <script src="API.js"></script> <!-- Meow, Load the magic from API.js OwO -->
+</body>
+</html>
