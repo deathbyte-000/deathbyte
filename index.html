@@ -18,7 +18,7 @@
       height: 100vh; /* Enchant the page to fill the entire screen */
       color: #ff0000; /* Red text color, for a touch of passion */
       background-color: #000000; /* Black background, like the night sky */
-      background-image: url('https://media.discordapp.net/attachments/801145282350809108/1221932652911657042/img-mQ4THLhZsNMMdwBbwDut9.png?ex=66146076&is=6601eb76&hm=51efad7c44f3aa9814eea8b532c67291c3d2bd60c7dd18fc1402d010be0f22c5&=&format=webp&quality=lossless&width=1160&height=662'); /* A mystical image to set the scene */
+      background-image: url('https://media.discordapp.net/attachments/801145282350809108/1221989459109609532/img-4bqvDkeMQKqgu03s5nqbg.png?ex=6614955e&is=6602205e&hm=b4b0d6c51baabd1954ff3faa2c00895a4c6aee10ca8fb610b6a0bf3c241674ee&=&format=webp&quality=lossless&width=1160&height=662'); /* A mystical image to set the scene */
       background-size: cover; /* Enchant the background to cover the entire page */
       background-position: center; /* Align the background to the center */
     }
@@ -26,7 +26,7 @@
     /* Styles for the top bar, a magical gateway to other realms */
     .topbar {
       width: 100%; /* Enchant the top bar to span the entire width of the page */
-      background-color: rgba(0, 0, 0, 0.759); /* A translucent black background to cast a shadow */
+      background-color: rgba(0, 0, 0, 0.951); /* A translucent black background to cast a shadow */
       padding: 10px; /* Add padding for a cozy feel */
       border-radius: 0 0 10px 10px; /* Round the corners for a gentle touch */
       display: flex;
@@ -59,7 +59,7 @@
     .sidebar {
       width: 200px; /* Set the width of the sidebar to a magical dimension */
       height: calc(100vh - 60px); /* Enchant the sidebar to fill the remaining height */
-      background-color: rgba(0, 0, 0, 0.759); /* A translucent black background for mystery */
+      background-color: rgba(0, 0, 0, 0.951); /* A translucent black background for mystery */
       position: fixed; /* Fix the sidebar in place */
       left: 0; /* Attach it firmly to the left */
       top: 100px; /* Position it below the top bar for hierarchy */
@@ -70,7 +70,7 @@
     /* Styles for the main container, a magical vessel of content */
     .container {
       text-align: center; /* Center the content for focus */
-      background-color: rgba(0, 0, 0, 0.759); /* A translucent black background for contrast */
+      background-color: rgba(0, 0, 0, 0.951); /* A translucent black background for contrast */
       padding: 20px; /* Add padding for comfort */
       border-radius: 10px; /* Round the corners for a gentle touch */
       margin-top: 60px; /* Add margin to create space below the top bar */
@@ -89,7 +89,8 @@
 
     /* Enchant the button with magical properties */
     button {
-      padding: 8px 16px; /* Add padding for comfort */
+      padding: 8px 16px; /* Add padding for
+      8px 16px; /* Add padding for comfort */
       font-size: 16px; /* Set the font size for readability */
       background-color: #9e3b3b; /* Pink button color for charm */
       color: #000000; /* Black text color for contrast */
@@ -199,26 +200,77 @@
     input:checked + .toggle-slider:before {
       transform: translateX(26px); /* Move the adornment to the right */
     }
-/* Styles for the Play Music button */
-.play-music-btn {
-  background-color: #4CAF50; /* Green */
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
+/* Styles for the upload container */
+.upload-container {
+  margin-bottom: 20px;
 }
 
-.play-music-btn {
-  /* Additional styles for the Play Music button */
-  position: absolute;
-  bottom: 40px;
-  left: 50%;
-  transform: translateX(-50%);
+/* Styles for the upload label */
+.upload-label {
+  font-weight: bold;
+  color: #ff0000; /* Red text color for charm */
+}
+
+/* Styles for the file input */
+.file-input {
+  padding: 8px; /* Add padding for comfort */
+  font-size: 16px; /* Set the font size for readability */
+  margin-right: 10px; /* Add margin for separation */
+  color: #ff0000; /* Pink text color for charm */
+  background-color: #000000; /* Black background for contrast */
+  border: 2px solid #ff0000; /* Pink border for style */
+  border-radius: 5px; /* Round the corners for elegance */
+}
+
+/* Styles for the analyze button */
+.analyze-button {
+  padding: 8px 20px; /* Add padding for comfort */
+  font-size: 16px; /* Set the font size for readability */
+  background-color: #4caf50; /* Green button color for charm */
+  color: #fff; /* White text color for contrast */
+  border: none; /* Remove the border for a sleek appearance */
+  border-radius: 5px; /* Round the corners for elegance */
+  cursor: pointer; /* Change the cursor to a pointer for interactivity */
+  transition: background-color 0.3s ease; /* Add a smooth transition for elegance */
+}
+
+/* Styles for the analyze button on hover */
+.analyze-button:hover {
+  background-color: #45a049; /* Darker green hover color for excitement */
+}
+
+/* Styles for the analysis result */
+.analysis-result {
+  margin-bottom: 20px; /* Add margin for separation */
+}
+
+/* Styles for the malicious snippet */
+.malicious-snippet {
+  padding: 10px; /* Add padding for comfort */
+  border-radius: 5px; /* Round the corners for elegance */
+  border: 1px solid #ff9999; /* Red border for emphasis */
+  color: #ff0000; /* Red text color for charm */
+}
+
+/* Styles for the malicious snippet paragraphs */
+.malicious-snippet p {
+  margin: 0; /* Remove margin for a clean appearance */
+}
+/* Styles for the custom file upload button */
+.custom-file-button {
+  padding: 8px 20px; /* Add padding for comfort */
+  font-size: 16px; /* Set the font size for readability */
+  background-color: #ff0000; /* Red button color for charm */
+  color: #fff; /* White text color for contrast */
+  border: none; /* Remove the border for a sleek appearance */
+  border-radius: 5px; /* Round the corners for elegance */
+  cursor: pointer; /* Change the cursor to a pointer for interactivity */
+  transition: background-color 0.3s ease; /* Add a smooth transition for elegance */
+}
+
+/* Styles for the custom file upload button on hover */
+.custom-file-button:hover {
+  background-color: #cc0000; /* Darker red hover color for excitement */
 }
   </style>
 </head>
@@ -239,8 +291,27 @@
     <!-- Buttons for extra features -->
     <button onclick="showPage('tokenPage')">Generate Token</button> <!-- A button to conjure tokens T-T -->
     <button onclick="showPage('ipLoggerPage')">IP Logger Generator</button> <!-- A button to summon the IP Logger O-o -->
+    <button onclick="showPage('fileUploadPage')">Malicious Code Detect</button> <!-- A button to summon the IP Logger O-o -->
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
     <button onclick="toggleMusic()" class="play-music-btn">Play Music</button> <!-- A button to play the Music ^-^ -->
   </div>
+
+<!-- File Upload and Analysis Page -->
+<div id="fileUploadPage" class="container page">
+  <h3>File Upload and Analysis</h3>
+  <div class="upload-container">
+    <label for="file" class="upload-label">Upload .txt or .js file:</label>
+    <input type="file" id="file" accept=".txt,.js" class="file-input">
+    <button onclick="analyzeFile()" class="analyze-button">Analyze</button>
+  </div>
+  <div id="analysisResult" class="analysis-result"></div>
+  <div id="maliciousSnippet" class="malicious-snippet"></div>
+</div>
 
   <!-- Token Page -->
   <div id="tokenPage" class="container page active-page">
